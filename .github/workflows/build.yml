@@ -3,5 +3,6 @@ jobs:
   Build-openwrt:
     runs-on: ubuntu-latest
     steps:
+      - run: pwd && ls -l
       - run: chmod u+x build.sh
       - run: ./build.sh

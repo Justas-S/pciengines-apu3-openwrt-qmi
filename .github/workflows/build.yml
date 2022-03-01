@@ -1,6 +1,6 @@
 on: [push]
 jobs:
-  Build openwrt:
+  Build-openwrt:
     runs-on: ubuntu-latest
     steps:
       - run: chmod u+x build.sh

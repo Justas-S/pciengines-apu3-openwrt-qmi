@@ -1,6 +1,6 @@
 on: [push]
 env:
-  OPENWRT_VERSION: "23.05.2"
+  OPENWRT_VERSION: "23.05.4"
   ARCH: x86-64
 jobs:
   Build-openwrt:

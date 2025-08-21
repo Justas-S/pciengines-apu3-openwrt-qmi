@@ -10,7 +10,7 @@ jobs:
       - run: chmod u+x build.sh
       - run: ./build.sh "$OPENWRT_VERSION" "$ARCH"
       - run: tree .
-      - uses: actions/upload-artifact@v2
+      - uses: actions/upload-artifact@v4
         with:
           name: openwrt-${{ env.OPENWRT_VERSION }}-${{ env.ARCH }}-generic-ext4-combined.img.gz
           path: openwrt-imagebuilder-${{ env.OPENWRT_VERSION }}-${{ env.ARCH }}.Linux-x86_64/bin/targets/x86/64/openwrt-${{ env.OPENWRT_VERSION }}-${{ env.ARCH }}-generic-ext4-combined.img.gz

@@ -16,4 +16,4 @@ unzstd openwrt-imagebuilder-*.tar.zst
 tar xvf     openwrt-imagebuilder-*.tar
 cd openwrt-imagebuilder-*/
 
-make image PACKAGES="luci luci-ssl qmi-utils kmod-usb-net-qmi-wwan libqmi luci-proto-qmi uqmi"
+make image PACKAGES="luci luci-ssl qmi-utils kmod-usb-net-qmi-wwan libqmi luci-proto-qmi uqmi zerotier"
